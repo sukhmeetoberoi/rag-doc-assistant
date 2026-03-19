@@ -8,6 +8,13 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def stream_generate(prompt):
+    """
+    Generate answer using LLM with streaming.
+
+    Streaming improves user experience by:
+    - Showing output gradually
+    - Reducing perceived latency
+    """
     response = client.chat.completions.create(
         model=MODEL_NAME,
         messages=[{"role": "user", "content": prompt}],

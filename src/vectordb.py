@@ -3,6 +3,16 @@ from chromadb.config import Settings
 
 class VectorStore:
     def __init__(self, persist_dir="vectordb"):
+
+        """
+        Initialize vector database.
+
+        Using ChromaDB because:
+        - Easy to set up
+        - Supports persistence
+        - Good for small-scale RAG systems
+        """
+
         self.persist_dir = persist_dir
 
         self.client = chromadb.PersistentClient(

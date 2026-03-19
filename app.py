@@ -27,5 +27,5 @@ if query:
 
     st.subheader("Sources")
     for s in sources:
-        st.markdown(f"Score: {s['score']:.2f}")
-        st.caption(s["text"][:200] + "...")
+        st.markdown(f"**Score: {s['score']:.2f}**")
+        st.info(s["text"])

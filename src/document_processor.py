@@ -3,6 +3,10 @@ from pypdf import PdfReader
 from nltk.tokenize import sent_tokenize
 
 def load_pdf(path):
+    """
+    Load text from a document.
+    Currently supports PDF and TXT files.
+    """
     import fitz
 
     try:
@@ -11,15 +15,29 @@ def load_pdf(path):
         for page in doc:
             text += page.get_text() or ""
         return text
+
+    """Make a exception to handle the error of not able to read the pdf file """
     except Exception as e:
         print(f"PDF parsing failed: {e}")
         return ""
 
 def clean_text(text):
+    """
+    Clean extra spaces and normalize text.
+    Helps improve embedding quality.
+    """
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 def chunk_text(text, chunk_size=200):
+
+    """
+    Split text into smaller chunks.
+
+    Why?
+    - LLMs cannot process very large text at once
+    - Smaller chunks improve retrieval accuracy
+    """
     sentences = sent_tokenize(text)
 
     chunks = []
@@ -43,6 +61,12 @@ def chunk_text(text, chunk_size=200):
     return chunks
 
 def process_document(path):
+
+    """
+    Full preprocessing pipeline:
+    Load → Clean → Chunk
+    """
+
     raw = load_pdf(path)
     clean = clean_text(raw)
     return chunk_text(clean)

@@ -3,6 +3,10 @@ from src.prompt import build_prompt
 from src.generator import stream_generate
 
 def run_rag(query, vectordb):
+    """
+    End-to-end RAG pipeline:
+    Query → Retrieve → Prompt → Generate
+    """
     docs = retrieve(query, vectordb)
 
     context = "\n\n".join([d["text"] for d in docs])
