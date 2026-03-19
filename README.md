@@ -7,9 +7,7 @@ An end-to-end **Retrieval-Augmented Generation (RAG)** chatbot that answers user
 ## 🚀 Demo
 
 🔗 **Project Links**
-
-* 💻 GitHub Repository: [View Code](YOUR_GITHUB_LINK)
-* 🎬 Demo Video: [Watch Demo](YOUR_VIDEO_LINK)
+* 🎬 Demo Video: [Watch Demo](https://drive.google.com/file/d/1xCNzkKOy78amtJdVeCA8helMRRlKJAKc/view?usp=sharing)
 
 ---
 
