@@ -10,11 +10,11 @@ An end-to-end **Retrieval-Augmented Generation (RAG)** chatbot that answers user
 * 🎬 Demo Video: [Watch Demo](https://drive.google.com/file/d/1xCNzkKOy78amtJdVeCA8helMRRlKJAKc/view?usp=sharing)
 
 Example of the project : 
+<img width="1919" height="833" alt="Screenshot 2026-03-20 022858" src="https://github.com/user-attachments/assets/78cad1d4-dbf1-41c4-b830-eb2263505ad1" />
+
 <img width="1911" height="434" alt="Screenshot 2026-03-20 023047" src="https://github.com/user-attachments/assets/5a10b06e-8ce8-4888-947a-0e7ac69eeba4" />
 
   
-
----
 
 ## 📌 Overview
 
@@ -26,7 +26,6 @@ Unlike traditional chatbots, this system:
 * ✅ Uses **retrieved context**
 * ⚡ Streams responses in real-time
 
----
 
 ## 🏗️ System Architecture
 
@@ -47,7 +46,6 @@ Unlike traditional chatbots, this system:
 * Prompt Construction
 * LLM Response (Streaming)
 
----
 
 ## 🔄 RAG Pipeline
 
@@ -74,7 +72,6 @@ Unlike traditional chatbots, this system:
    * **LLaMA 3.1 8B Instant**
    * Generates grounded answers
 
----
 
 ## 🧾 Prompt Template
 
@@ -98,7 +95,6 @@ Answer:
 * Implemented using generator functions
 * Enhances user experience with real-time interaction
 
----
 
 ## 🖥️ Streamlit Features
 
@@ -111,7 +107,6 @@ Answer:
   * Number of chunks indexed
 * 🔄 Reset chat functionality
 
----
 
 ## 📁 Project Structure
 
@@ -156,7 +151,6 @@ git clone [YOUR_GITHUB_LINK](https://github.com/sukhmeetoberoi/rag-doc-assistant
 cd rag-document-assistant
 ```
 
----
 
 ### 2️⃣ Install Dependencies
 
@@ -189,14 +183,12 @@ This step will:
 streamlit run app.py
 ```
 
----
 
 ### ⚠️ Note
 
 If you skip the vector database step, the chatbot will not return meaningful responses.
 
 
----
 
 ## 📊 Example Queries
 
@@ -212,7 +204,6 @@ If you skip the vector database step, the chatbot will not return meaningful res
 * 🔸 Latency due to LLM inference
 * 🔸 Retrieval errors if chunking is weak
 
----
 
 ## 🚀 Future Improvements
 
