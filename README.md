@@ -8,6 +8,10 @@ An end-to-end **Retrieval-Augmented Generation (RAG)** chatbot that answers user
 
 🔗 **Project Links**
 * 🎬 Demo Video: [Watch Demo](https://drive.google.com/file/d/1xCNzkKOy78amtJdVeCA8helMRRlKJAKc/view?usp=sharing)
+
+Example of the project : 
+<img width="1911" height="434" alt="Screenshot 2026-03-20 023047" src="https://github.com/user-attachments/assets/5a10b06e-8ce8-4888-947a-0e7ac69eeba4" />
+
   
 
 ---
