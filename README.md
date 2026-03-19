@@ -148,8 +148,8 @@ rag-doc-assistant/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_LINK
-cd your-repo-name
+git clone [YOUR_GITHUB_LINK](https://github.com/sukhmeetoberoi/rag-doc-assistant)
+cd rag-document-assistant
 ```
 
 ---
