@@ -8,6 +8,7 @@ An end-to-end **Retrieval-Augmented Generation (RAG)** chatbot that answers user
 
 🔗 **Project Links**
 * 🎬 Demo Video: [Watch Demo](https://drive.google.com/file/d/1xCNzkKOy78amtJdVeCA8helMRRlKJAKc/view?usp=sharing)
+  
 
 ---
 
@@ -110,20 +111,39 @@ Answer:
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
 ```
-/data
-/chunks
-/vectordb
-/src
-  ├── retriever.py
-  ├── generator.py
-  ├── pipeline.py
-app.py
-requirements.txt
-README.md
+rag-doc-assistant/
+│
+├── data/
+│   └── document.pdf              # Input document
+│
+├── chunks/
+│   └── chunks.json              # Processed text chunks
+│
+├── vectordb/                    # Stored Chroma vector database
+│
+├── notebooks/
+│   └── preprocessing.ipynb      # Data preprocessing experiments
+│
+├── src/
+│   ├── config.py                # Configuration settings
+│   ├── document_processor.py    # Text extraction & cleaning
+│   ├── embedding.py             # Embedding generation logic
+│   ├── vectordb.py              # ChromaDB operations
+│   ├── retriever.py             # Semantic search logic
+│   ├── prompt.py                # Prompt template
+│   ├── generator.py             # LLM response generation
+│   └── rag_pipeline.py          # End-to-end pipeline
+│
+├── app.py                       # Streamlit chatbot UI
+├── build_vectordb.py            # Script to create vector DB
+├── requirements.txt             # Dependencies
+├── .env                         # API keys (not committed)
+└── README.md                    # Project documentation
 ```
 
----
 
 ## ⚙️ Installation & Setup
 
