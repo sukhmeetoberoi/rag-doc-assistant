@@ -111,8 +111,6 @@ Answer:
 
 ## 📁 Project Structure
 
-## 📁 Project Structure
-
 ```
 rag-doc-assistant/
 │
@@ -154,17 +152,45 @@ git clone YOUR_GITHUB_LINK
 cd your-repo-name
 ```
 
+---
+
 ### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Application
+---
+
+### 3️⃣ Build Vector Database (IMPORTANT ⚠️)
+
+Before running the chatbot, you must process the document and create embeddings:
+
+```bash
+python build_vectordb.py
+```
+
+This step will:
+
+* 📄 Load and clean the document
+* ✂️ Chunk the text
+* 🧠 Generate embeddings
+* 🗂️ Store them in **ChromaDB**
+
+---
+
+### 4️⃣ Run the Chatbot
 
 ```bash
 streamlit run app.py
 ```
+
+---
+
+### ⚠️ Note
+
+If you skip the vector database step, the chatbot will not return meaningful responses.
+
 
 ---
 
